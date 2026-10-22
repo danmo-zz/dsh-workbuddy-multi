@@ -1,0 +1,25 @@
+# 构建产物与分发包（通过 GitHub Release 发布）
+dist/
+*.tgz
+*.zip
+SHA256SUMS.txt
+
+# 依赖
+node_modules/
+
+# 凭证与运行时数据 —— 绝不入库
+**/workbuddy-accounts/
+**/workbuddy-accounts/**
+**/.workbuddy-usage.json
+**/.workbuddy-*.json
+*.token
+.env
+.env.*
+*.key
+*.pem
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
